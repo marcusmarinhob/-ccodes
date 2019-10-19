@@ -41,7 +41,9 @@ void main() {
   print_array( test, SIZE);
   printf("\n\n");
   print_statistics( test, SIZE);
-  
+  printf("\n\n");
+  sort_array( test, SIZE);
+  print_array( test, SIZE);
 
   
 }
@@ -124,5 +126,19 @@ int find_minimum(unsigned char * data, unsigned int length)
 
 void sort_array( unsigned char * data, unsigned int length )
 {
-  return;
+  unsigned char aux;
+  int i, j;
+
+  for (i = 0; i < length; ++i) 
+  {
+    for (j = i + 1; j < length; ++j)
+    {
+      if (data[i] < data[j]) 
+      {
+        aux =  data[i];
+        data[i] = data[j];
+        data[j] = aux;
+      }
+    }
+  }
 }
