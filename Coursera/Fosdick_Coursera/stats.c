@@ -76,7 +76,8 @@ void print_array( unsigned char * data, unsigned int length )
 
 int find_median( unsigned char * data, unsigned int length )
 {
-  return 0;
+  sort_array( data, length );
+  return data[ (int)((length-1)/2)];
 }
 
 float find_mean( unsigned char * data, unsigned int length )
