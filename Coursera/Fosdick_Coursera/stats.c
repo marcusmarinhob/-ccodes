@@ -108,7 +108,17 @@ int find_maximum(unsigned char * data, unsigned int length)
 
 int find_minimum(unsigned char * data, unsigned int length)
 {
-  return 0;
+  int index;
+  int minimum = data[0];
+  
+  for( index = 0; index < length; index++ )
+  {
+     if( data[index] < minimum)
+     {
+       minimum = data[index];
+     } 
+  }
+  return minimum;
 }
 
 
