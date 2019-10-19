@@ -39,11 +39,22 @@ void main() {
   /* Statistics and Printing Functions Go Here */
 
   print_array( test, SIZE);
+  printf("\n\n");
+  print_statistics( test, SIZE);
+  
 
+  
 }
 
 void print_statistics( unsigned char * data, unsigned int length )
 {
+  printf("Statistics: \n");
+  printf("----------------\n");
+
+  printf("mean   : %d\n", find_mean   ( data, length));
+  printf("median : %d\n", find_median ( data, length));
+  printf("maximum: %d\n", find_maximum( data, length));
+  printf("minimum: %d\n", find_minimum( data, length));
 
 }
 
@@ -63,29 +74,28 @@ void print_array( unsigned char * data, unsigned int length )
 
 int find_median( unsigned char * data, unsigned int length )
 {
-
+  return 0;
 }
 
 int find_mean( unsigned char * data, unsigned int length )
 {
-
+  return 0;
 }
 
 
 int find_maximum(unsigned char * data, unsigned int length)
 {
-
+  return 0;
 }
 
 
 int find_minimum(unsigned char * data, unsigned int length)
 {
-
+  return 0;
 }
-
 
 
 void sort_array( unsigned char * data, unsigned int length )
 {
-  
+  return;
 }
