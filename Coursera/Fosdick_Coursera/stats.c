@@ -51,7 +51,7 @@ void print_statistics( unsigned char * data, unsigned int length )
   printf("Statistics: \n");
   printf("----------------\n");
 
-  printf("mean   : %d\n", find_mean   ( data, length));
+  printf("mean   : %.3f\n", find_mean   ( data, length));
   printf("median : %d\n", find_median ( data, length));
   printf("maximum: %d\n", find_maximum( data, length));
   printf("minimum: %d\n", find_minimum( data, length));
@@ -77,9 +77,16 @@ int find_median( unsigned char * data, unsigned int length )
   return 0;
 }
 
-int find_mean( unsigned char * data, unsigned int length )
+float find_mean( unsigned char * data, unsigned int length )
 {
-  return 0;
+  int index;
+  float mean = 0;
+
+  for( index = 0; index < length; index ++)
+  {
+    mean += data[index];
+  }
+  return (mean/length);
 }
 
 
