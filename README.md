@@ -2,7 +2,7 @@
 
 
 <h1 align="center">
-    <img alt="Home Automation" title="#HomeAutomation" src="./ccodes.png" width="250px" />
+    <img alt="C Codes" title="#CCodes" src="./ccodes.png" width="250px" />
 </h1>
 
 <h4 align="center"> 
