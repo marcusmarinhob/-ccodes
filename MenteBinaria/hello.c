@@ -1,7 +1,11 @@
-#include <stdio.h>
+#include <stdio.h> // Diretiva de pre-processamento
 
-int main(void){
-	printf("papobinario.com.br\n");
-    printf("vejo voces na proxima aula!\n");
-	return 0;
+int main(void)
+{
+    int ret = 0;
+
+    ret = printf("papobinario.com.br\n"); // Definida na lib padrão
+    printf("retorno da printf() anterior: %d\n", ret);
+    
+    return 0;
 }
